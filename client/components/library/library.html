@@ -1,0 +1,9 @@
+<template name='library'>
+  {{#each movie in movies}}
+  <img src="https://image.tmdb.org/t/p/w300{{movie.poster_path}}">
+  {{/each}}
+</template>
+
+<body>
+  {{> library}}
+</body>
