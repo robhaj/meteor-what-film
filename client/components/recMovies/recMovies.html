@@ -1,0 +1,6 @@
+<template name='recMovies'>
+  <button class="btn btn-sm btn-primary grabRec">Grab Recs</button>
+  {{#each movie in getRecs}}
+  <img src="https://image.tmdb.org/t/p/w300{{movie.poster_path}}">
+  {{/each}}
+</template>

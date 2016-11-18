@@ -24,3 +24,5 @@ twbs:bootstrap
 http
 iron:router
 session
+accounts-google
+accounts-ui

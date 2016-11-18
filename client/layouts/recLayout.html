@@ -1,0 +1,11 @@
+<template name="RecTemplate">
+  <body>
+    {{> navBar}}
+    {{# if Template.subscriptionsReady}}
+      {{> recMovies}}
+    {{else}}
+      {{> loader}}
+    {{/if}}
+    {{> footer}}
+  </body>
+</template>

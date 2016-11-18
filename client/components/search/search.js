@@ -15,6 +15,7 @@ Template.search.helpers({
 
 Template.search.events({
   'click .search'(event, instance) {
+    console.log(event.target.previousElementSibling)
     Meteor.call('searchMovies', [event.target.previousElementSibling.value], (err,res) => {
       if (err) {
         console.log(err)
@@ -23,6 +24,11 @@ Template.search.events({
     })
   },
   'click .addToLib'(event, instance) {
-    // Meteor call to add movie to lib
+    Meteor.call('addMovieToLib', Meteor.userId(), Session.get('movie'), (err, res) => {
+      if (err) {
+        console.log(err)
+      }
+      console.log(res)
+    })
   }
 });

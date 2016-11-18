@@ -1,9 +1,7 @@
 <template name='library'>
-  {{#each movie in movies}}
+  <button class="btn btn-sm btn-primary grabLib">Grab Library</button>
+  {{#each movie in getLibrary}}
   <img src="https://image.tmdb.org/t/p/w300{{movie.poster_path}}">
   {{/each}}
+  <button class="btn btn-sm btn-primary clearLib">Clear Library</button>
 </template>
-
-<body>
-  {{> library}}
-</body>

@@ -1,12 +1,9 @@
 <template name='search'>
+  <div class="posterContainer">
     <img src="https://image.tmdb.org/t/p/w300{{getMovie.poster_path}}">
-    <p>Type in a movie that you enjoyed recently!</p>
-    <input type="text">
-    <button class="btn btn-sm btn-primary">Search</button>
+  </div>
+    <input placeholder="A movie you like..." name="search" />
+    <button class="btn btn-sm btn-primary search">Search</button>
     <br><br>
-    <button class="btn btn-sm btn-primary">Add to Library</button>
+    <button class="btn btn-sm btn-primary addToLib">Add to Library</button>
 </template>
-
-<body>
-  {{> search}}
-</body>

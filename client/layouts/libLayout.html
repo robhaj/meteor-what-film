@@ -1,0 +1,12 @@
+<template name="LibraryTemplate">
+  <body>
+    {{> navBar}}
+      {{#if Template.subscriptionsReady}}
+        {{> library}}
+      {{else}}
+        {{> loader}}
+      {{/if}}
+    {{> footer}}
+
+  </body>
+</template>

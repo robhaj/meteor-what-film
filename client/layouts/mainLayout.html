@@ -1,0 +1,10 @@
+<template name="MainLayout">
+  <body>
+    {{> navBar}}
+    {{#if Template.subscriptionsReady}}
+    {{else}}
+      {{> loader}}
+    {{/if}}
+    {{> footer}}
+  </body>
+</template>
